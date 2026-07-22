@@ -1,0 +1,19 @@
+{
+  "name": "Grab — Video Downloader",
+  "short_name": "Grab",
+  "description": "Paste a link and save the video. YouTube, TikTok, Instagram, X.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0D1315",
+  "theme_color": "#0D1315",
+  "icons": [
+    {
+      "src": "/static/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
