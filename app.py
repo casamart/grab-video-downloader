@@ -33,8 +33,9 @@ app = Flask(__name__)
 # quality key -> yt-dlp format ("audio" handled specially)
 FORMATS = {
     "best": "bestvideo*+bestaudio/best",
-    "1080": "bestvideo[height<=1080]+bestaudio/best[height<=1080]",
-    "720": "bestvideo[height<=720]+bestaudio/best[height<=720]",
+    # trailing /best guarantees a fallback so single-stream clips never error
+    "1080": "bestvideo[height<=1080]+bestaudio/best[height<=1080]/best",
+    "720": "bestvideo[height<=720]+bestaudio/best[height<=720]/best",
     "audio": "audio",
 }
 
